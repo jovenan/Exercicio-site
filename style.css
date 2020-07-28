@@ -1,0 +1,30 @@
+#interface{
+    margin: 0 0 0 0;
+    border: solid 1px;
+    padding: 200px 300px 200px 300px;
+    background-image: url(imagens/back.jpg); 
+    opacity: 90%;
+    position: relative;
+    text-align: center;
+
+}
+
+#titulo {
+    font-style: italic;
+    font-size: 70px;
+    color: white;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+hr {
+    height: 3px;
+    background-color: white;
+}
+#interface2 {
+    margin: 0 0 0 0;
+    border: solid 1px;
+    padding: 200px 300px 200px 300px;
+    position: static;
+    background-image: url(imagens/carbonara.jpg);
+}
