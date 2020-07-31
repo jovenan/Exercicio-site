@@ -1,8 +1,14 @@
+body {
+    margin: auto;
+}
+
 #interface{
-    margin: 0 0 0 0;
     border: solid 1px;
     padding: 200px 300px 200px 300px;
-    background-image: url(imagens/back.jpg); 
+    background-image: url(imagens/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 90%;
     position: relative;
     text-align: center;
@@ -10,11 +16,11 @@
 }
 
 #titulo {
-    font-style: italic;
+    font-family: galada;
     font-size: 70px;
+    font-weight: 400;
     color: white;
     opacity: 100%;
-    font-weight: bold;
 }
 
 hr {
@@ -22,9 +28,46 @@ hr {
     background-color: white;
 }
 #interface2 {
-    margin: 0 0 0 0;
     border: solid 1px;
     padding: 200px 300px 200px 300px;
     position: static;
     background-image: url(imagens/carbonara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;;
 }
+
+nav {
+    background-color: white;
+    border: solid 1px black;
+    display: block;
+    padding: 40px;
+    
+}
+#logo {
+    position: absolute;
+    margin-top: -30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 0 0 700px;
+}
+
+#navbar li{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    font-family: galada;
+}
+@font-face {
+    font-family: galada;
+    src: local(galada), url(Galada-Regular.ttf)
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {color: greenyellow;}
