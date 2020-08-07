@@ -96,6 +96,7 @@ nav ul li a {
     border-radius: 40px;
     background-color: greenyellow;
     color: white;
+    transition: 0.5s;
 }
 
 #btnverde:hover {background-color: green; border: green;}
