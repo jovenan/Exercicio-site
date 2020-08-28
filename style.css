@@ -3,16 +3,15 @@ body {
 }
 
 #interface{
-    border: solid 1px;
+    border: solid 1px #ffffff;
     padding: 200px 300px 200px 300px;
     background-image: url(imagens/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 90%;
+    background-attachment: fixed;
     position: relative;
     text-align: center;
-
 }
 
 #titulo {
@@ -38,24 +37,46 @@ hr {
 }
 
 #interface2 {
-    border: solid 1px;
+    border: solid 1px #ffffff;
     position: static;
-    padding: 125px 0 120px 100px;
+    padding: 125px 0 120px 0;
     background-image: url(imagens/carbonara.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;;
+    background-attachment: fixed;
     display: flex;
     flex: content;
 }
 
+#depoimentos {
+    border: solid 1px #ffffff;
+    position: static;
+    padding: 50px 0 50px 100px;
+    background-image: linear-gradient(to bottom, #87CEEB, #ffffff);
+    display: flex;
+}
+
+#img_depoimentos {
+    background-image: url(imagens/family-posing-for-a-photo-in-the-kitchen-42621618.jpg);
+    background-repeat: no-repeat;
+}
+
+.titulo2 {
+    padding:10px 300px 300px 250px;
+}
+
+#BV {
+    padding: 0 0 0 100px;
+}
+
 #BV2 {
-    padding: 0 0 0 125px;
+    padding: 0 100px 0 100px;
 }
 
 nav {
     background-color: white;
-    border: solid 1px black;
+    border: solid 1px #ffffff;
     display: block;
     padding: 40px;
     
@@ -99,18 +120,24 @@ nav ul li a {
     transition: 0.5s;
 }
 
+.pimenta {
+    padding: 0 0 0 130px;
+}
+
 #btnverde:hover {background-color: green; border: green;}
 
 nav ul li a:hover {color: greenyellow;}
 
-p {
+#texto {
     font-family: raleway;
     font-size: 20px;
     list-style: none;
-    
+    text-align: center;
+    line-height: 2;
 }
 
 main div div a {
+    text-align: center;
     text-decoration: none;
     color: black;
     border: solid 2px;
