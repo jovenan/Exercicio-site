@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form method="POST" id="fcontato" action="mailto:contato.arroba@gmail.com">
+        <fieldset>
+            <legend>Identificacao usuario</legend>
+            <p> <label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="30" maxlength="30" placeholder="Nome Completo"></p>
+            <p> <label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha"size="8" maxlength="8" placeholder="Senha"></p>
+            <p> <label for="cmail">email:</label><input type="email" name="tmail" id="cmail"placeholder="Exemplo.sobre@gmail.com" ></p>
+            <p>Data de Nascimento</p>
+            <input type="date">
+            <fieldset><legend>Sexo</legend>
+                <input type="radio" name="sexo" id="cmasc"> <label for="cmasc"> Masculino</label>
+                <input type="radio" name="sexo" id="cfem"> <label for="cfem"> Feminino</label>
+            </fieldset>
+            <p> <label for="cEst">Estado:</label></p>
+            <select name="tEst" id="cEst">
+                <option value=""></option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <!--A tag DATALIST(Para o type=text) serve para cadastrar varias opcoes, que quando o usuario digitar uma letra, ele vai mostrar uma sugestao-->
+            </select>
+            <p>Data de Nascimento</p>
+            <input type="date">
+            <p>Grau de urgencia</p>
+            <input type="range">
+            <p>Mensagem</p>
+            <textarea placeholder="Deixe sua mensagem aqui..."></textarea>
+        </fieldset>
+
+    </form>
+</body>
+</html>
