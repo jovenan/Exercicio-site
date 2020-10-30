@@ -1,10 +1,14 @@
 body {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 0;
 }
 
 #interface{
     border: solid 1px #ffffff;
-    padding: 200px 300px 200px 300px;
+    padding: 10% 20% 10% 20%;
     background-image: url(imagens/background.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +38,8 @@ body {
 .texto2 {
     color: red;
     font-weight: 600;
-    margin: 0 0 40px 0;
+    margin: 0 1% 40px 0;
+    display: flex;
 }
 
 hr {
@@ -45,7 +50,7 @@ hr {
 #interface2 {
     border: solid 1px #ffffff;
     position: static;
-    padding: 125px 0 120px 0;
+    padding: 125px 0 120px 5%;
     background-image: url(imagens/carbonara.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,14 +63,15 @@ hr {
 #depoimentos {
     border: solid 1px #ffffff;
     position: static;
-    padding: 100px 0 100px 100px;
+    padding: 100px 0 100px 5%;
     background-image: linear-gradient(to bottom, #87CEEB, #ffffff);
     display: flex;
 }
 
 #pessoas_depoimentos {
-    padding: 0 100px 0 100px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nome_pessoa {
@@ -79,7 +85,6 @@ hr {
 }
 
 #telefone {
-    padding: 0 0 0 200px;
 }
 
 #mulher {
@@ -97,7 +102,7 @@ hr {
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
-    padding: 200px 0 270px 770px;
+    
     display: flex;
     opacity: 0.9;
 }
@@ -106,6 +111,7 @@ hr {
     background-color: dimgray;
     padding: 7px;
     border-top: solid #ffffff 1px;
+    display: block;
 }
 
 .btnverde {
@@ -114,11 +120,15 @@ hr {
     font-family: raleway;
     margin: 30px 0 0 150px;
     font-weight: 600;
+    margin-left: 0;
 }
 
 #texto2 {
-    margin-right: 50px;
-    padding-top: 70px;
+    padding-left: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: block;
+    text-align: center;
 }
 
 #texto_empresa {
@@ -136,17 +146,20 @@ hr {
 }
 
 #BV {
-    padding: 0 0 0 100px;
+    padding: 0 0 0 2%;
+    text-align: center;
 }
 
 #BV2 {
     padding: 0 100px 0 100px;
+    text-align: center;
 }
 
 nav {
     background-color: white;
     border: solid 1px #ffffff;
     display: block;
+    position: relative;
     padding: 40px;
     
 }
@@ -156,8 +169,9 @@ nav {
 }
 
 ul {
+    text-align: right;
     list-style: none;
-    padding: 0 0 0 700px;
+    padding-left: 20% ;
 }
 
 #navbar li{
@@ -190,7 +204,7 @@ nav ul li a {
 }
 
 .pimenta {
-    padding: 0 0 0 130px;
+    
 }
 
 #btnverde:hover {background-color: green; border: green;}
@@ -210,9 +224,19 @@ main div div a {
     text-decoration: none;
     color: black;
     border: solid 2px;
-    margin: 0 0 0 35px;
     padding: 10px;
 }
 
 main div div a:hover{background-color: darkgray;}
 
+@media (max-width: 1000px) {
+    #interface2 {
+        display: block;
+    }
+    #depoimentos {
+        display: block;
+    }
+    #rodape {
+        display: block;
+    }
+}
