@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav><!--Header-->
+
+        
+
+    <nav id="fora"><!--Header-->
         <a href="index.html"><img src="imagens/logo.jpg"  id='logo'></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" id="icone"><img src="imagens/icone.png"></label>
+
+        <div class="barra">
+            <nav id="dentro">
+                <a href="index.html"><div class="link">Home</div></a>
+                <a href="#"><div class="link">Cardapio</div></a>
+                <a href="#"><div class="link">Nossa Cozinha</div></a>
+                <a href="#"><div class="link">Contato</div></a>
+            </nav>
+        </div>
+
         <ul id='navbar'>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Cardapio</a></li>
@@ -19,9 +35,9 @@
     <main><!--Main1-->
         <div id="interface"> 
             <img src="imagens/comida.png">
-            <h1 id='titulo'><bold>Divina Cocina</bold></h1>
+            <h1 id='titulo' class="titulocima"><bold>Divina Cocina</bold></h1>
             <br><hr id="hr1"><br>
-            <h2 id='titulo'><bold>Nosso objetivo é a experiencia</bold></h2>
+            <h2 id='titulo' class="titulocima"><bold>Nosso objetivo é a experiencia</bold></h2>
             <br>
             <img src="imagens/jantar.png">
         </div><!--Fim_main1-->
@@ -34,7 +50,8 @@
                 <br>
                 <p><a href="#">NOSSA COZINHA </a></p>
                 <br>
-                <p id="texto">Lorem ipsum, dolor sit amet 
+                <p id="texto" style="padding-right: 2%;">
+                    Lorem ipsum, dolor sit amet 
                 consectetur adipisicing elit.
                 Unde atque eius eum sint iure
                 rem ab excepturi id sequi 
@@ -61,8 +78,8 @@
             </div>
         </div><!--Fim_main2-->
         <div id="depoimentos"><!--Main3-->
-            <div id="img_depoimentos">
-                <h2 id="titulo2" class="titulo2">Depoimentos</h2>
+            <div id="img_depoimentos" style="margin-right: 2%;">
+                <h2 id="titulo2" class="titulo2" >Depoimentos</h2>
             </div>
             <div id="pessoas_depoimentos">
                 <img id="mulher" src="imagens/mulher_comentando.png">
