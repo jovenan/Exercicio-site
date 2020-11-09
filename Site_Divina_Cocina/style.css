@@ -151,11 +151,11 @@ hr {
 }
 
 #BV2 {
-    padding: 0 100px 0 100px;
+    padding: 0 0 0 2%;
     text-align: center;
 }
 
-nav {
+nav#fora{
     background-color: white;
     border: solid 1px #ffffff;
     display: block;
@@ -203,13 +203,13 @@ nav ul li a {
     transition: 0.5s;
 }
 
-.pimenta {
-    
+.pimenta img{
+    padding-left: 20%;
 }
 
 #btnverde:hover {background-color: green; border: green;}
 
-nav ul li a:hover {color: greenyellow;}
+nav div ul li a:hover {color: greenyellow;}
 
 #texto {
     font-family: raleway;
@@ -227,11 +227,22 @@ main div div a {
     padding: 10px;
 }
 
+#check {
+    display: none;
+}
+#icone {
+    display: none;
+}
+.barra {
+    display: none;
+}
+
 main div div a:hover{background-color: darkgray;}
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     #interface2 {
         display: block;
+        background-image: url(imagens/carbonara_mobile.jpg);
     }
     #depoimentos {
         display: block;
@@ -239,4 +250,73 @@ main div div a:hover{background-color: darkgray;}
     #rodape {
         display: block;
     }
+    
+}
+
+@media (max-width: 600px) {
+    .titulo2 {
+        padding: 10px 0 300px 0;
+    }
+    .pimenta img{
+        padding-left: 0;
+        width: 300px;
+        height: 450px;
+    }
+    #titulo{
+        font-size: 48px;
+    }
+    #texto2 {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    ul li a {
+        display: none;
+    }
+    #icone {
+        cursor: pointer;
+        display: block;
+        padding-top: 3%;
+        padding-left: 60%;
+        position: absolute;
+        z-index: 1;
+    }
+    .barra {
+        background-color: #333333;
+        height: 100%;
+        width: 300px;
+        position: absolute;
+        transition: all .2s linear;
+        display: none;
+        z-index: 2;
+        left: 0;
+
+    }
+    nav#dentro{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        position: absolute;
+    }
+
+    nav a {
+        text-decoration: none;
+
+    }
+    .link{
+        background-color: #494950;
+        padding: 20px;
+        transition: all .2s linear;
+        color: #ffffff;
+        border-bottom: 2px solid #222;
+
+    }
+
+
+    #check:checked ~ .barra {
+        display: block;
+        transition-delay: .2s;
+    }
+    
 }
